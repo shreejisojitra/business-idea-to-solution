@@ -1,0 +1,41 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\BTECH\projects\business-idea-to-solution\backend
+plugins: anyio-4.14.2, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 29 items
+
+tests\test_ai_analysis.py .....                                          [ 17%]
+tests\test_architecture.py ...                                           [ 27%]
+tests\test_auth_workspaces.py ..                                         [ 34%]
+tests\test_both_business_cases.py ..                                     [ 41%]
+tests\test_chat_service.py ...                                           [ 51%]
+tests\test_document_service.py ..                                        [ 58%]
+tests\test_full_pipeline.py .                                            [ 62%]
+tests\test_phase2_memory_decisions.py ......                             [ 82%]
+tests\test_schemas.py .....                                              [100%]
+
+============================== warnings summary ===============================
+app\api\v1\endpoints\auth.py:23
+  D:\BTECH\projects\business-idea-to-solution\backend\app\api\v1\endpoints\auth.py:23: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class UserResponseSchema(BaseModel):
+
+app\api\v1\endpoints\workspaces.py:17
+  D:\BTECH\projects\business-idea-to-solution\backend\app\api\v1\endpoints\workspaces.py:17: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class WorkspaceResponseSchema(BaseModel):
+
+app\api\v1\endpoints\projects.py:21
+  D:\BTECH\projects\business-idea-to-solution\backend\app\api\v1\endpoints\projects.py:21: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ProjectResponseSchema(BaseModel):
+
+app\api\v1\endpoints\ai_chat.py:21
+  D:\BTECH\projects\business-idea-to-solution\backend\app\api\v1\endpoints\ai_chat.py:21: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ChatMessageOut(BaseModel):
+
+app\api\v1\endpoints\ai_chat.py:31
+  D:\BTECH\projects\business-idea-to-solution\backend\app\api\v1\endpoints\ai_chat.py:31: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ConversationOut(BaseModel):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 29 passed, 5 warnings in 2.19s ========================
+
